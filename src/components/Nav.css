@@ -1,0 +1,53 @@
+nav{
+    display: flex;
+    background-color: #ffffff;
+    height:70px;
+    width: 100vw;
+}
+.logo{
+    flex: 1 1 0%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.logo-img{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.search{
+    flex: 4 1 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#search-bar{
+    height: 50%;
+    width: 75%;
+    background-color: whitesmoke;
+    border: 1px rgba(170, 170, 170, 0.753) solid;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.account{
+    flex: 1 1 0%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}

@@ -1,0 +1,55 @@
+.post{
+    width: 750px;
+    height: 670px;
+    background-color: #FEFEFE;
+    display: flex;
+    gap: 10px;
+    border-radius: 15px;
+}
+.sidebar{
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 15px 0 0 15px;
+    padding-top: 15px ;
+}
+
+.like, .save, .share{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FEFEFE;
+}
+
+.main{
+    flex: 9 1 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+}
+.user{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.post-avatar{
+    height:35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.title{
+    font-size: 24px;
+}
+
+.post-img{
+    flex: 1 1 0%;
+    width: 90%;
+    background-color: #f6f6f6;
+}
