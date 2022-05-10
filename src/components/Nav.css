@@ -44,10 +44,18 @@ input:focus, textarea:focus, select:focus{
     justify-content: center;
     align-items: center;
 }
+.account:hover{
+    cursor: pointer;
+}
 
 .avatar{
     height:50px;
     width: 50px;
     border-radius: 50%;
     background-color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }

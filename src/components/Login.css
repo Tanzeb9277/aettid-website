@@ -1,0 +1,54 @@
+.screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.login-card{
+    width: 500px;
+    height: 500px;
+    background-color: #fefefe;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    top: calc(50vh - 250px);
+    margin-left: auto; 
+    margin-right: auto;
+}
+.header-img{
+    width: 100%;
+    height: 25%;
+    background-image: url('https://thumbs.dreamstime.com/b/banner-raw-uncooked-ingredients-cooking-pasta-background-food-healthy-eating-concept-186934703.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 70%;
+    margin: 30px auto;
+}
+
+.login-form form input{
+    height: 30px;
+}
+
+.login-form form button{
+    width: 30%;
+    margin: auto;
+    background-color: #ec5451;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+
+}
+.login-form form button:hover{
+    cursor: pointer;
+    background-color: #dd706f;
+}

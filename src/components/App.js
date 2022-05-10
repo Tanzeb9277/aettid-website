@@ -1,4 +1,5 @@
 import Post from './Post';
+import { Link } from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -7,7 +8,9 @@ function App() {
       <div className='posts'>
         <div className='create'>
           Home
-          <button>Create Post</button>
+          <Link to="/create-post">
+            <button>Create Post</button>
+          </Link>
         </div>
         <Post/>
         <Post/>

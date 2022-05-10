@@ -11,16 +11,16 @@ import { Link } from 'react-router-dom';
     render(){
         return(
             <nav>
-                <div className='logo'>
+                <Link to="/" className='logo'>
                     <div className='logo-img'>
                         <img src=''/>
                     </div>
                     <h2>Aettid</h2>
-                </div>
+                </Link>
                 <div className='search'>
                     <input type="text" placeholder='Search' id='search-bar'/>
                 </div>
-                <div className='account'>
+                <div className='account' onClick={this.props.onClick}>
                     <div className='avatar'>
                         <img className='avatar-img' src=''/>
                     </div>
