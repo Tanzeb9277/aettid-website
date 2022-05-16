@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/aettid-website/static/css/main.314ac356.css",
-    "main.js": "/aettid-website/static/js/main.b21b571e.js",
+    "main.js": "/aettid-website/static/js/main.4d544992.js",
     "static/media/aettid.png": "/aettid-website/static/media/aettid.7d763967de1f625a565c.png",
     "index.html": "/aettid-website/index.html",
     "main.314ac356.css.map": "/aettid-website/static/css/main.314ac356.css.map",
-    "main.b21b571e.js.map": "/aettid-website/static/js/main.b21b571e.js.map"
+    "main.4d544992.js.map": "/aettid-website/static/js/main.4d544992.js.map"
   },
   "entrypoints": [
     "static/css/main.314ac356.css",
-    "static/js/main.b21b571e.js"
+    "static/js/main.4d544992.js"
   ]
 }
