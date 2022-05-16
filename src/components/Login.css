@@ -39,6 +39,7 @@
 
 .login-form form button{
     width: 30%;
+    padding: 0.45em 1em;
     margin: auto;
     background-color: #ec5451;
     border: none;
@@ -51,4 +52,59 @@
 .login-form form button:hover{
     cursor: pointer;
     background-color: #dd706f;
+}
+.login-form p {
+    text-align: center;
+    font-size: 12px;
+  }
+.login-form span {
+    color: blue;
+  }
+.login-form span:hover{
+    cursor: pointer;
+}
+
+.signup-form{
+    display: none;
+
+}
+
+.signup-form form{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 70%;
+    margin: 30px auto;
+}
+
+.signup-form form input{
+    height: 30px;
+}
+
+.signup-form form button{
+    width: 30%;
+    padding: 0.45em 1em;
+    margin: auto;
+    background-color: #2b898b;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+
+}
+.signup-form form button:hover{
+    cursor: pointer;
+    background-color: #3b9b9c;
+}
+
+.signup-form p {
+    text-align: center;
+    font-size: 12px;
+  }
+.signup-form span {
+    color: blue;
+  }
+.signup-form span:hover{
+    cursor: pointer;
 }

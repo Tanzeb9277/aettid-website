@@ -16,6 +16,11 @@ nav{
     width: 50px;
     border-radius: 50%;
     background-color: whitesmoke;
+    overflow: hidden;
+}
+
+.logo-img img{
+    width: 100%;
 }
 
 .search{

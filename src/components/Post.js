@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './Post.css'
+import { getStorage, ref, getDownloadURL } from "firebase/storage";
 import LineIcon from "react-lineicons";
+
 
 
 class Post extends Component{
     constructor(props){
         super(props)
     }
+
 
 
     liked = (e) =>{
@@ -51,13 +54,13 @@ class Post extends Component{
                         <div className='post-avatar'>
                             <img className='avatar-img' src=''/>
                         </div>
-                        <h2 className='username'>Username</h2>
+                        <h2 className='username'>{this.props.user}</h2>
                     </div>
                     <div className='title'>
-                        Here is a Title
+                        {this.props.title}
                     </div>
                     <div className='post-img'>
-                        <img src='https://preview.redd.it/jiprd26zvty81.jpg?width=640&crop=smart&auto=webp&s=f2e1b2194ae4d08e1576b54eab04e0fa5327b2fd'/>
+                        <img id={this.props.path}/>
                     </div>
                 </div>
             </div>

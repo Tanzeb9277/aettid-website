@@ -1,8 +1,81 @@
 import Post from './Post';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
+import { config } from "../config";
+import { getStorage, ref, getDownloadURL } from "firebase/storage";
+import { collection, doc, getDoc, addDoc, getDocs, getFirestore } from "firebase/firestore"; 
+import { initializeApp } from "firebase/app";
 
-function App() {
+
+
+const firebaseConfig = {
+
+  apiKey: config.apiKey,
+
+  authDomain: config.authDomain,
+
+  projectId: config.projectId,
+
+  storageBucket: config.storageBucket,
+
+  messagingSenderId: config.messagingSenderId,
+
+  appId: config.appId,
+
+  measurementId: config.measurementId
+
+};
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+
+function App(props) {
+
+  const [posts, setPosts] = useState([]);
+
+  const getPosts = async (calledFrom = 'function') => {
+    const querySnapshot = await getDocs(collection(db, "posts"));
+    console.log(calledFrom)
+    const saveFirebasePosts = [];
+      querySnapshot.forEach((doc) => {
+        let data = doc.data();
+        saveFirebasePosts.push(data);
+        console.log(saveFirebasePosts)
+      });
+      setPosts(saveFirebasePosts);
+      
+    }
+    const getImg = (path) => {
+      const storage =  getStorage();
+      getDownloadURL(ref(storage, path))
+      .then((url) => {
+          // `url` is the download URL for 'images/stars.jpg'
+          // insert into an <img> element
+          
+         let img = document.getElementById(path);
+         img.setAttribute('src', url)
+      })
+      .catch((error) => {
+          // Handle any errors
+      });
+  }
+    
+
+
+  useEffect(() => {
+    getPosts("useEffect");
+
+  }, [])
+  
+ 
+
+
+
+
+
+  
+
   return (
     <div className="App">
       <div className='posts'>
@@ -12,8 +85,15 @@ function App() {
             <button>Create Post</button>
           </Link>
         </div>
-        <Post/>
-        <Post/>
+        {posts.map((post) => {
+              let src = getImg(post.imagePath);
+              console.log(src);
+              return <Post
+                user={post.user}
+                title={post.title}
+                path={post.imagePath}
+              />;
+            })}
       </div>
       <div className='info-card'>
           <div className="ft-recipe">

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Nav.css'
+import logo from './aettid.png';
 import { Link } from 'react-router-dom';
 
 
@@ -13,9 +14,9 @@ import { Link } from 'react-router-dom';
             <nav>
                 <Link to="/" className='logo'>
                     <div className='logo-img'>
-                        <img src=''/>
+                        <img src={logo}/>
                     </div>
-                    <h2>Aettid</h2>
+                    <h2>aettid</h2>
                 </Link>
                 <div className='search'>
                     <input type="text" placeholder='Search' id='search-bar'/>
@@ -24,7 +25,7 @@ import { Link } from 'react-router-dom';
                     <div className='avatar'>
                         <img className='avatar-img' src=''/>
                     </div>
-                    <h2 className='username'>Account</h2>
+                    <h2 className='username' id='nav-username' data-login='false'>Log in</h2>
                 </div>
             </nav>
         )
