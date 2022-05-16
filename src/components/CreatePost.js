@@ -89,7 +89,7 @@ const CreatePost = () =>{
             uploadBytes(imageRef, image).then((snapshot) => {
                 console.log('Uploaded a blob or file!');
             });
-            navigate('/', {replace: true})
+            navigate('aettid-website/', {replace: true})
 ;        } catch (e) {
             console.error("Error adding document: ", e);
         } 
