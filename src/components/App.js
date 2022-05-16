@@ -81,7 +81,7 @@ function App(props) {
       <div className='posts'>
         <div className='create'>
           Home
-          <Link to="/create-post">
+          <Link to="/aettid-website/create-post">
             <button>Create Post</button>
           </Link>
         </div>

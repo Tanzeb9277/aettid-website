@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
     render(){
         return(
             <nav>
-                <Link to="/" className='logo'>
+                <Link to="/aettid-website/" className='logo'>
                     <div className='logo-img'>
                         <img src={logo}/>
                     </div>
