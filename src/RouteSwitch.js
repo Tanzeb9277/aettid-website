@@ -19,8 +19,8 @@ const RouteSwitch = () => {
     <BrowserRouter>
     <Nav onClick={displayLogin}/>
       <Routes>
-        <Route path="/aettid-website" exact element={<App />} />
-        <Route path="/aettid-website/create-post" element={<CreatePost/>}/>
+        <Route path="/" exact element={<App />} />
+        <Route path="/create-post" element={<CreatePost/>}/>
       </Routes>
     <Login onClick={removeLogin}/>
     </BrowserRouter>
