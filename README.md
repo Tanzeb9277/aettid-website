@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Aettid-Website
+A reddit clone but specifically meant for sharing pictures of food, hence the name Aettid(ate it).  
+Aettid allows user to sign up, sign in and submit posts.  
+[Live Demo](https://tanzeb9277.github.io/aettid-website/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
